@@ -4,6 +4,8 @@
 
 replicaCount: 1
 
+podAnnotations: {}
+
 image:
   repository: linuxserver/bazarr
   tag: latest
