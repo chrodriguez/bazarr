@@ -49,11 +49,11 @@ spec:
               value: America/Vancouver
           livenessProbe:
             httpGet:
-              path: /notifications
+              path: /static/favicon.ico
               port: http
           readinessProbe:
             httpGet:
-              path: /notifications
+              path: /static/favicon.ico
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
